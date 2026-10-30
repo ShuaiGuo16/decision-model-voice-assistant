@@ -1,0 +1,102 @@
+{
+  "run_at_utc": "2026-10-24T17:35:43.139637+00:00",
+  "voice_deployment": "gpt-live-1",
+  "decision_deployment": "Decision-1",
+  "voice": "marin",
+  "input_source": "Windows Microsoft Zira Desktop, rate 0, PCM16 mono 24 kHz",
+  "elapsed_seconds": 150.78,
+  "description": "Seven scripted synthetic cleaner updates with actual GPT-Live transcripts, spoken replies, and Decision-1 choices. One decision request per update.",
+  "turns": [
+    {
+      "input_audio": "audio/cleaner_01.wav",
+      "output_audio": "audio/assistant_01.wav",
+      "cleaner_text": "The current guest code opened the entrance I made the bed with clean sheets and clean pillowcases I have not inspected the sink or kitchen yet The kitchen is closed while the painter works there. But I can inspect the bathroom now",
+      "assistant_text": "Okay. Got it. Okay. Thanks for letting me know. When you run the bathroom sink, does it drain normally, and stay dry underneath?",
+      "assessment": {
+        "bathroom": "needs_evidence",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "needs_evidence",
+        "next_action": "ask_bathroom"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_02.wav",
+      "output_audio": "audio/assistant_02.wav",
+      "cleaner_text": "Hold on. The plumber has just shut off the bathroom water for the next hour The painter has has finished and reopened the kitchen. I still have not checked either room. But I can go into the kitchen now",
+      "assistant_text": "I see. Okay. Can you check the kitchen now? Are the counters clean, and is there any food left in the fridge?",
+      "assessment": {
+        "bathroom": "needs_evidence",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "needs_evidence",
+        "next_action": "ask_kitchen"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_03.wav",
+      "output_audio": "audio/assistant_03.wav",
+      "cleaner_text": "The kitchen counters are clean now. I opened the refrigerator and removed every item left by the previous guests The bathroom water is still shut off. So I cannot run the tap yet",
+      "assistant_text": "Nice. Okay. We can’t finish the bathroom check until the water is back on. Let me know when it’s running again.",
+      "assessment": {
+        "bathroom": "needs_evidence",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "ready",
+        "next_action": "defer"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_04.wav",
+      "output_audio": "audio/assistant_04.wav",
+      "cleaner_text": "The water is back on. I let the tap run and the basin emptied normally, but droplets appeared on the joint underneath while the water was flowing",
+      "assistant_text": "Oh. The place isn’t ready yet. There’s a leak under the bathroom sink. The other spots look good.",
+      "assessment": {
+        "bathroom": "issue",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "ready",
+        "next_action": "finish"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_05.wav",
+      "output_audio": "audio/assistant_05.wav",
+      "cleaner_text": "I need to correct what I said about the bedding. The clean pillowcases I mentioned were for the apartment next door. In this apartment I changed the sheets and made the bed, but I have not examined the pillowcases The bedroom is available for me to check now",
+      "assistant_text": "Got it. Thanks. Could you take a look at the bed now? Are the pillowcases clean in this unit?",
+      "assessment": {
+        "bathroom": "issue",
+        "bedroom": "needs_evidence",
+        "entrance": "ready",
+        "kitchen": "ready",
+        "next_action": "ask_bedroom"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_06.wav",
+      "output_audio": "audio/assistant_06.wav",
+      "cleaner_text": "I found marks on the pillowcases. So I replaced them with clean ones and made the bed again using the clean sheets. The sink is still dripping underneath. Nobody has repaired it yet",
+      "assistant_text": "Okay. The place still isn’t ready yet. The bathroom sink is leaking. The other areas look good.",
+      "assessment": {
+        "bathroom": "issue",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "ready",
+        "next_action": "finish"
+      }
+    },
+    {
+      "input_audio": "audio/cleaner_07.wav",
+      "output_audio": "audio/assistant_07.wav",
+      "cleaner_text": "Maintenance has now repaired the joint. After they finished, I ran the tap for a full minute. Water drained normally, and I watched underneath the whole time. It stayed dry",
+      "assistant_text": "Great. Everything’s ready now.",
+      "assessment": {
+        "bathroom": "ready",
+        "bedroom": "ready",
+        "entrance": "ready",
+        "kitchen": "ready",
+        "next_action": "finish"
+      }
+    }
+  ]
+}
